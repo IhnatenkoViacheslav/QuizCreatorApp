@@ -53,7 +53,7 @@ const QuizItem: FC = () => {
 					Question: {questionCounter + 1} / {totalQuestions}
 				</p>
 			)}
-			{!timeExpired && (
+			{!timeExpired && questionCounter <= selectedQuiz!.questions.length && (
 				<div className="absolute top-3 -right-16">
 					<Timer
 						onTimeExpired={handleTimeExpired}
