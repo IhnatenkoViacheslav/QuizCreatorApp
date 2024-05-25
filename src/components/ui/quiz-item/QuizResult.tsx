@@ -16,7 +16,7 @@ const QuizResult: FC<{ score: number }> = ({ score }) => {
 
 	return (
 		<>
-			<p className="text-xl font-semibold mb-10">Your Result Is: {score} %</p>
+			<p className="text-lg font-semibold mb-10">Your Result Is: {score}%</p>
 			<h2 className="text-lg text-primary mb-10">{result}</h2>
 			<Link className="py-2 px-4 rounded-xl btn-grad w-24" to="/">
 				Return
